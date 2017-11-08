@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v1/TzjcRDsJVMe8n7BQm0PsU-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Barlow Bold'), local('Barlow-Bold'), url(https://fonts.gstatic.com/s/barlow/v1/8hNuYABG6RcCB7awZe-wJ7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+html {
+  font-size: 16px;
+  font-family: "barlow";
+}
+body {
+  background-color: #d3d3d3;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h5{
+  font-size: 1rem;
+  font-weight: normal;
+  color: blue;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* header section */
+header {
+  display: flex;
+  height: 32px;
+  background-color: white;
+  margin: -.5rem;
+  padding-top: .5rem
+}
+header nav{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 24px;
+}
+header nav a {
+  padding: 0rem 8px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  padding-left: 24px;
+}
+.logo1,
+.logo2 {
+  padding: .4rem 0;
+}
+.logo1 {
+  font-weight: bold;
+}
+.logo2 {
+  color: grey;
+}
+
+/* main section */
+.main {
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: row;
+}
+.main img {
+  width: 100%;
+}
+.leftmain {
+  width: 60%;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 24px;
+  width: 40%;
+}
+.right p {
+  font-size: 2.2rem;
+}
+.right a {
+  font-size: 2rem;
+  text-align: center;
+  padding: 8px 0;
+  width: 450px;
+  background-color: #ff786c;
+  border-radius: 5px;
+  color: #056571;
+  text-decoration: none;
+}
+.right a:hover {
+  background-color: #ff6a5c;
+  transition: all .8s 0s;
+  color: #045a65;
+
+}
+.right a:active {
+  background-color: #696969;
+}
+/* information section */
+.information {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 60%;
+}
+.left h2,
+.left p,
+.left h6 {
+  padding-left: 24px;
+}
+.information img {
+  width: 97%;
+  padding: 32px 24px;
+}
+.right2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-top: 16px;
+}
+.small img {
+  width: 35%;
+  height: 100%;
+  padding: 16px;
+
+}
+
+.small {
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  align-self: center;
+}
+.text h3,
+.text p,
+.text h5 {
+  margin: 9px 0;
+
+}
+/* learing section */
+
+.learn h2 {
+  display: block;
+}
+.learn {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 32px;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  padding-bottom: 32px;
+}
+.classes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.learning {
+  margin: 16px;
+  width: 30%;
+}
+.classtext {
+  padding: 16px 0 24px 16px;
+}
+.learning img {
+  width: 100%;
+}
+.learning h4 {
+  margin: 0;
+  padding: 0;
+}
+.learning p {
+  padding-top: 8px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* thesis section */
+
+.thesiscontent {
+  display: flex;
+  flex-direction: row;
+}
+.thleft {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.thleft video {
+  max-width: 97%;
+  display: block;
+  padding: 0 24px 24px 24px;
+}
+.thleft h3,
+.thleft p {
+  display: block;
+}
+.thright {
+  width: 40%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8px;
+  border-top: 1px solid lightgrey;
+  background-color: white;
+  margin: 0 -.5rem -5rem -.5rem;
+}
+footer div {
+  padding: 16px;
+  display: inline;
+}
+.foot {
+  margin-left: auto;
+  margin-right: 24px;
+  padding: 0 0 45px 24px;
+}
+.dropbtn {
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e4e4e4;
+  width: 20rem;
+  z-index: 1;
+}
+.dropdown-content p {
+  padding: 12px;
+  display: block;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+  bottom: 100%;
+  right: 10%;
+}
