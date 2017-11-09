@@ -12,11 +12,13 @@
   src: local('Barlow Bold'), local('Barlow-Bold'), url(https://fonts.gstatic.com/s/barlow/v1/8hNuYABG6RcCB7awZe-wJ7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 @media only screen and (max-width:480px) {
   body {
     margin: 0;
   }
 }
+
 html {
   font-size: 16px;
   font-family: "barlow";
@@ -46,15 +48,15 @@ h6 {
   font-size: 1rem;
   font-weight: bold;
 }
+
 @media only screen and (max-width:480px) {
   h1 {
     font-size: 3.5rem;
   }
-  h2 {
-
-  }
 }
+
 /* header section */
+
 header {
   display: flex;
   height: 2rem;
@@ -89,6 +91,7 @@ header nav a {
 .mobileheader {
   display: none;
 }
+
 @media only screen and (max-width:480px) {
   header {
     height: 4rem;
@@ -101,7 +104,6 @@ header nav a {
   .logo2 {
     display: none;
   }
-
   .mobileheader {
     width: 100%;
     display: flex;
@@ -114,6 +116,7 @@ header nav a {
 }
 
 /* main section */
+
 .main {
   margin: 2rem 1.5rem;
   display: flex;
@@ -137,8 +140,8 @@ header nav a {
 .right a {
   font-size: 2rem;
   text-align: center;
-  padding: 8px 0;
-  width: 30rem;
+  padding: .5rem 0;
+  max-width: 30rem;
   background-color: #ff786c;
   border-radius: .3rem;
   color: #056571;
@@ -148,11 +151,11 @@ header nav a {
   background-color: #ff6a5c;
   transition: all .8s 0s;
   color: #045a65;
-
 }
 .right a:active {
   background-color: #696969;
 }
+
 @media only screen and (max-width:480px) {
   .main {
     flex-direction: column;
@@ -162,11 +165,9 @@ header nav a {
   }
   .leftmain {
     width: 100%;
-    border: 1px solid red;
   }
   .right {
     width: 100%;
-    border: 1px solid blue;
     margin: 0;
     padding: 0;
   }
@@ -180,13 +181,12 @@ header nav a {
   .right p {
     padding: 0 0 1.5rem 1rem;
   }
-
-
 }
+
 /* information section */
+
 .information {
   display: flex;
-  flex-direction: row;
 }
 .left {
   width: 60%;
@@ -196,8 +196,8 @@ header nav a {
 .left h6 {
   padding-left: 1.5rem;
 }
-.information img {
-  width: 97%;
+.infoimg {
+  width: 95%;
   padding: 2rem 1.5rem;
 }
 .right2 {
@@ -208,11 +208,9 @@ header nav a {
 }
 .pic {
   width: 35%;
-  height: 100%;
+  height: 80%;
   padding: 1rem;
-
 }
-
 .small {
   display: flex;
   flex-direction: row;
@@ -231,14 +229,15 @@ header nav a {
 .mobilepic {
   display: none;
 }
+
 @media only screen and (max-width:480px) {
   .right2 {
     width: 100%;
   }
   .small {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid red;
   }
   .left {
     display: none;
@@ -251,15 +250,14 @@ header nav a {
     padding: 1rem;
     max-width: 90%;
     height: auto;
-    border: 1px solid blue;
   }
   .text {
     align-self: flex-start;
     margin-left: 1rem;
     padding-left: 1rem;
-    border: 1px solid blue;
   }
 }
+
 /* learing section */
 
 .learn h2 {
@@ -299,6 +297,7 @@ header nav a {
   font-size: 1.5rem;
   margin: 0;
 }
+
 @media only screen and (max-width:480px) {
   .learn {
     width: 100%;
@@ -328,7 +327,6 @@ header nav a {
     padding: 1rem 0 1.5rem 1rem;
     background-color: #e4e4e4;
     width: 97%;
-
   }
 }
 
@@ -355,10 +353,30 @@ header nav a {
   padding-left: 1.5rem;
 }
 .thright {
+  display: flex;
+  flex-direction: column;
   width: 40%;
 }
 
+@media only screen and (max-width:480px) {
+  .thright {
+    display: none;
+  }
+  .thleft {
+    width: 100%;
+  }
+  .thleft h3,
+  .thleft p {
+    display: none;
+  }
+  .thleft video {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
 /* footer */
+
 footer {
   display: flex;
   flex-direction: row;
@@ -398,4 +416,10 @@ footer div {
   display: block;
   bottom: 100%;
   right: 10%;
+}
+
+@media only screen and (max-width:480px) {
+  .foot {
+    display: none;
+  }
 }
