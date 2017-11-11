@@ -375,6 +375,22 @@ header nav a {
   }
 }
 
+/* social */
+
+.social {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 97%;
+  bottom: 13%;
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: .3rem;
+}
+.social i {
+  padding: .7rem;
+}
+
 /* footer */
 
 footer {
